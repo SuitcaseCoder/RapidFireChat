@@ -483,3 +483,8 @@ h2 {
 #mainContent div{
   margin: 10px;
 }
+
+/* hiding the form on load */
+#hideShowSubscription{
+  display: none;
+}
