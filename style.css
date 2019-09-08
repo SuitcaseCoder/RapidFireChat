@@ -431,6 +431,12 @@ th {
 
 /**/
 
+body {
+  font-weight: normal;
+  font-size:12px;
+  font-family: Helvetica, sans-serif;
+  color: #5C3313;
+}
 
 #header {
   margin-left:auto;
@@ -467,9 +473,8 @@ h2 {
 
 #mainContent {
   display: flex;
-  align-items: center;
   justify-content: center;
-  background-color: #FFF9E7;
+  background-color: #FFF9E7; 
   padding:30px;
 }
 
@@ -480,11 +485,42 @@ h2 {
   font-size: 12px;
 }
 
-#mainContent div{
+#mailChimpWidget, #podcastWidget{
   margin: 10px;
+}
+
+.mc-field-group {
+  margin-top:5px;
+}
+
+.mc-field-group input {
+  padding: 5px;
+  width: 100%;
+}
+
+#mce-BIRTHDAY-month, #mce-BIRTHDAY-day {
+  width: 20px;
+}
+
+#mc-embedded-subscribe{
+  background: #DD5526;
+  border: 1px solid #9A9A9A;
+  box-sizing: border-box;
+  color:#FFF;
+  padding:5px;
+  margin-top:5px;
 }
 
 /* hiding the form on load */
 #hideShowSubscription{
   display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  #mainContent {
+  display: block;
+  }
+  #mailChimpWidget{
+    padding-top: 15px;
+  }
 }
